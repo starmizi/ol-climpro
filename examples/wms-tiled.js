@@ -3,10 +3,9 @@ var layers = [
     source: new ol.source.OSM()
   }),
   new ol.layer.Tile({
-    extent: [-13884991, 2870341, -7455066, 6338219],
     source: new ol.source.TileWMS({
-      url: 'https://ahocevar.com/geoserver/wms',
-      params: {'LAYERS': 'topp:states', 'TILED': true},
+      url: 'http://139.162.41.42:81/cgi-bin/qgis_mapserv.fcgi',
+      params: {'MAP': '/var/www/geonode/geonode/qgis_layer/cdd_son_jawa.qgs', 'LAYERS': 'cdd_son_jawa', 'TILED': true},
       serverType: 'geoserver'
     })
   })

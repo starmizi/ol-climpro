@@ -1,8 +1,8 @@
 var wmsSource = new ol.source.TileWMS({
-  url: 'https://ahocevar.com/geoserver/wms',
-  params: {'LAYERS': 'ne:ne'},
+  url: 'http://139.162.41.42:81/cgi-bin/qgis_mapserv.fcgi',
+  params: {'MAP': '/var/www/geonode/geonode/qgis_layer/cdd_son_jawa.qgs', 'LAYERS': 'cdd_son_jawa', 'TILED': true},
   serverType: 'geoserver',
-  crossOrigin: 'anonymous'
+  crossOrigin: 'said'
 });
 
 var wmsLayer = new ol.layer.Tile({
