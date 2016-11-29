@@ -37,7 +37,7 @@
           });
       var wmsSource = new ol.source.TileWMS({
         url: 'http://139.162.41.42:81/cgi-bin/qgis_mapserv.fcgi',
-        params: {'MAP': '/var/www/geonode/geonode/qgis_layer/lc_jatim_1.qgs', 'LAYERS': 'lc_jatim_1', 'TILED': true},
+        params: {'MAP': '/var/www/geonode/geonode/qgis_layer/jatim_adm_4.qgs', 'LAYERS': 'jatim_adm_4', 'TILED': true},
         serverType: 'qgis-server',
         crossOrigin: 'said'
       });
