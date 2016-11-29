@@ -1,3 +1,7 @@
+var osm =  new ol.layer.Tile({
+      source: new ol.source.OSM()
+    });
+
 var wmsSource = new ol.source.TileWMS({
   url: 'http://139.162.41.42:81/cgi-bin/qgis_mapserv.fcgi',
   params: {'MAP': '/var/www/geonode/geonode/qgis_layer/lc_jatim.qgs', 'LAYERS': 'lc_jatim', 'TILED': true},
@@ -11,11 +15,11 @@ var wmsLayer = new ol.layer.Tile({
 
 var view = new ol.View({
   center: [0, 0],
-  zoom: 1
+  zoom: 5
 });
 
 var map = new ol.Map({
-  layers: [wmsLayer],
+  layers: [osm, wmsLayer],
   target: 'map',
   view: view
 });
