@@ -67,3 +67,4 @@
   }
   document.write('<scr' + 'ipt type="text/javascript" src="' + scriptId + '.js"></scr' + 'ipt>');
 }());
+
